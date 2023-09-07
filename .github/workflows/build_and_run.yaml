@@ -2,11 +2,11 @@ name: Docker Image Build and Run
 
 on:
   push:
-    branches: [ main ]
+    branches: [ Pushing-Cloned-Code ]
     paths:
     - '*'
   pull_request:
-    branches: [ main ]
+    branches: [ Pushing-Cloned-Code ]
     paths:
     - '*'
 
