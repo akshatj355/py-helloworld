@@ -3,12 +3,13 @@ name: Docker Image Build and Run
 on:
   push:
     branches: [ Pushing-Cloned-Code ]
+    tags: ["*"]
     paths:
-    - '*'
+      - '**'
   pull_request:
-    branches: [ Pushing-Cloned-Code ]
+    types: [opened, edited, synchronize, reopened]
     paths:
-    - '*'
+      - '**'
 
 jobs:
 
